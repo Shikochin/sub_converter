@@ -1,0 +1,10 @@
+<template>
+    <v-card title="Node Name">
+        <v-form>
+            <v-text-field label="Include"
+                placeholder="Node included keywords, support regular expressions"></v-text-field>
+            <v-text-field label="Exclude"
+                placeholder="Node excluded keywords, support regular expressions"></v-text-field>
+        </v-form>
+    </v-card>
+</template>
