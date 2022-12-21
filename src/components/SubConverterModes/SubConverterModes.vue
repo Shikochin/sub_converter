@@ -1,21 +1,20 @@
 <script setup lang="ts">
 import BasicMode from './SubConverterBasicMode.vue'
 import AdvancedMode from './SubConverterAdvancedMode.vue'
+import { useOthersStore } from '@/stores/othersStore';
 
-import { ref } from 'vue';
-import type { Ref } from 'vue';
-let mode: Ref<"basic" | "advanced"> = ref("basic")
+const store = useOthersStore()
 </script>
 
 <template>
     <v-card>
-        <v-tabs v-model="mode">
+        <v-tabs v-model="store.mode">
             <v-tab value="basic">Basic</v-tab>
             <v-tab value="advanced">Advanced</v-tab>
         </v-tabs>
 
         <v-card-text>
-            <v-window v-model="mode">
+            <v-window v-model="store.mode">
                 <v-window-item value="basic">
                     <BasicMode></BasicMode>
                 </v-window-item>

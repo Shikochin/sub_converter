@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import SubLinks from '../SubConverterOptions/SubLinks.vue';
-import ProxyClient from '../SubConverterOptions/ProxyClient.vue';
-import BackendAddress from '../SubConverterOptions/BackendAddress.vue';
-import RemoteConfig from '../SubConverterOptions/RemoteConfig.vue';
-import NodeName from '../SubConverterOptions/NodeName.vue'
-import FileName from '../SubConverterOptions/FileName.vue';
-import MoreOptions from '../SubConverterOptions/MoreOptions.vue';
-import CustomFeatures from '../SubConverterOptions/CustomFeatures.vue';
-import ExportAsNodeList from '../SubConverterOptions/ExportAsNodeList.vue'
+import SubLinks from '../SubConverterParams/SubLinks.vue';
+import ProxyClient from '../SubConverterParams/ProxyClient.vue';
+import BackendAddress from '../SubConverterParams/BackendAddress.vue';
+import RemoteConfig from '../SubConverterParams/RemoteConfig.vue';
+import NodeName from '../SubConverterParams/NodeName.vue'
+import ReturnedFileName from '../SubConverterParams/ReturnedFileName.vue';
+import MoreOptions from '../SubConverterParams/MoreOptions.vue';
+import CustomFeatures from '../SubConverterParams/CustomFeatures.vue';
+import ExportAsNodeList from '../SubConverterParams/ExportAsNodeList.vue'
 import SubConverterResults from '../SubConverterResults.vue';
 import SubConverterFunctions from '../SubConverterFunctions.vue';
 </script>
@@ -18,7 +18,7 @@ import SubConverterFunctions from '../SubConverterFunctions.vue';
     <BackendAddress></BackendAddress>
     <RemoteConfig></RemoteConfig>
     <NodeName></NodeName>
-    <FileName></FileName>
+    <ReturnedFileName></ReturnedFileName>
     <MoreOptions></MoreOptions>
     <CustomFeatures></CustomFeatures>
     <ExportAsNodeList></ExportAsNodeList>

@@ -10,6 +10,8 @@ specifiers:
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
   npm-run-all: ^4.1.5
+  pinia: ^2.0.28
+  sweetalert2: ^11.6.16
   typescript: ~4.7.4
   vite: ^4.0.0
   vue: ^3.2.45
@@ -30,6 +32,8 @@ devDependencies:
   eslint: 8.30.0
   eslint-plugin-vue: 9.8.0_eslint@8.30.0
   npm-run-all: 4.1.5
+  pinia: 2.0.28_e7lp6ggkpgyi5vqd44m2kxvk6i
+  sweetalert2: 11.6.16
   typescript: 4.7.4
   vite: 4.0.2_@types+node@18.11.17
   vue-tsc: 1.0.16_typescript@4.7.4
@@ -548,6 +552,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.45
       '@vue/shared': 3.2.45
+
+  /@vue/devtools-api/6.4.5:
+    resolution: {integrity: sha512-JD5fcdIuFxU4fQyXUu3w2KpAJHzTVdN+p4iOX2lMWSHMOoQdMAcpFLZzm9Z/2nmsoZ1a96QEhZ26e50xLBsgOQ==}
+    dev: true
 
   /@vue/eslint-config-typescript/11.0.2_adxhicpeghzj7xflzvuh26phpu:
     resolution: {integrity: sha512-EiKud1NqlWmSapBFkeSrE994qpKx7/27uCGnhdqzllYDpQZroyX/O6bwjEpeuyKamvLbsGdO6PMR2faIf+zFnw==}
@@ -1715,6 +1723,24 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  /pinia/2.0.28_e7lp6ggkpgyi5vqd44m2kxvk6i:
+    resolution: {integrity: sha512-YClq9DkqCblq9rlyUual7ezMu/iICWdBtfJrDt4oWU9Zxpijyz7xB2xTwx57DaBQ96UGvvTMORzALr+iO5PVMw==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.4.5
+      typescript: 4.7.4
+      vue: 3.2.45
+      vue-demi: 0.13.11_vue@3.2.45
+    dev: true
+
   /postcss-selector-parser/6.0.11:
     resolution: {integrity: sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==}
     engines: {node: '>=4'}
@@ -1965,6 +1991,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /sweetalert2/11.6.16:
+    resolution: {integrity: sha512-T2FO8LptErsjE4r0WMfiSk4YbeUvPadNaUZ/cADMEOnws000znrf8zFX9S5e/spvzJDyRI5En73WQyDZhGypxQ==}
+    dev: true
+
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
@@ -2085,7 +2115,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.45
-    dev: false
 
   /vue-eslint-parser/9.1.0_eslint@8.30.0:
     resolution: {integrity: sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==}
