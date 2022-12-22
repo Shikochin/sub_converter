@@ -1,5 +1,3 @@
-import { defineStore } from 'pinia'
-
 const remoteConfigs: Map<string, string> = new Map()
 
 remoteConfigs.set(
@@ -47,30 +45,4 @@ remoteConfigs.set(
     'https://cdn.jsdelivr.net/gh/SleepyHeeead/subconverter-config@master/remote-config/special/basic.ini'
 )
 
-export const useRemoteConfigsStore = defineStore({
-    id: 'remoteConfigsStore',
-    state: () => ({
-        remoteConfig: '',
-        remoteConfigs,
-    }),
-    getters: {
-        remoteConfigsNames: (state) => {
-            const remoteConfigs = []
-            for (const name of state.remoteConfigs.keys()) {
-                remoteConfigs.push(name)
-            }
-            return remoteConfigs
-        },
-    },
-    actions: {
-        getRemoteConfigKey(remoteConfig: string): string {
-            let parsedRemoteConfig = ''
-            for (const [key, value] of remoteConfigs) {
-                if (value === remoteConfig) {
-                    parsedRemoteConfig = key
-                }
-            }
-            return parsedRemoteConfig
-        },
-    },
-})
+export default remoteConfigs

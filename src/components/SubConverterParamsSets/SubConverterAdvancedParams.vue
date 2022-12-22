@@ -2,10 +2,8 @@
 import BackendUrl from '../SubConverterParams/BackendUrl.vue';
 import RemoteConfig from '../SubConverterParams/RemoteConfig.vue';
 import NodeName from '../SubConverterParams/NodeName.vue'
-import ReturnedFileName from '../SubConverterParams/ReturnedFileName.vue';
-import MoreOptions from '../SubConverterParams/MoreOptions.vue';
-import CustomFeatures from '../SubConverterParams/CustomFeatures.vue';
-import ExportAsNodeList from '../SubConverterParams/ExportAsNodeList.vue'
+import FileName from '../SubConverterParams/FileName.vue';
+import MoreParams from '../SubConverterParams/MoreParams.vue';
 </script>
 
 <template>
@@ -19,16 +17,10 @@ import ExportAsNodeList from '../SubConverterParams/ExportAsNodeList.vue'
         <NodeName></NodeName>
     </section>
     <section class="sub-parts">
-        <ReturnedFileName></ReturnedFileName>
+        <FileName></FileName>
     </section>
     <section class="sub-parts">
-        <MoreOptions></MoreOptions>
-    </section>
-    <section class="sub-parts">
-        <CustomFeatures></CustomFeatures>
-    </section>
-    <section class="sub-parts">
-        <ExportAsNodeList></ExportAsNodeList>
+        <MoreParams></MoreParams>
     </section>
 </template>
 

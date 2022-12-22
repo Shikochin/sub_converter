@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useOthersStore } from '@/stores/othersStore';
+import { useParamsStore } from '@/stores/paramsStore';
 
-const store = useOthersStore()
+const store = useParamsStore()
 </script>
 
 <template>
     <v-card class="params" title="Subscription Links" color="primary"
-        subtitle="Support 'subscription links' or 'ss/ssr/vmess link'. Multiple links, one per line or separated by |">
-        <v-textarea label="Subscription Links" v-model="store.subscriptionLinks"></v-textarea>
+        subtitle="Support 'subscription links' or 'ss/ssr/vmess link', multiple links, one per line or separated by |">
+        <v-textarea label="Subscription Links" v-model="store.basicParams.subscriptionLinks"></v-textarea>
     </v-card>
 </template>
