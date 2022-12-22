@@ -15,13 +15,13 @@ const remoteConfigsStore = useRemoteConfigsStore()
 const moreOptionsStore = useMoreOptionsStore()
 
 function genSubLink() {
-    const backendAddress = othersStore.backendAddress === '' ? "https://api.wcc.best/sub?" : othersStore.backendAddress
+    const backendAddress = othersStore.backendUrl === '' ? "https://api.wcc.best/sub?" : othersStore.backendUrl
 
     const subscriptionLinks = othersStore.subscriptionLinks.replace(/(\n|\r|\n\r)/g, "|")
 
     resultStore.customSubscriptionLink = `${backendAddress}target=${proxyClientsStore.proxyClients.get(proxyClientsStore.proxyClient)}&url=${encodeURIComponent(subscriptionLinks)}&insert=${customFeaturesStore.choosedFeatures.includes("NeteaseCloud")}`
 
-    if (othersStore.mode === 'advanced') {
+    if (othersStore.params === 'advanced') {
         if (remoteConfigsStore.remoteConfig !== "") {
             resultStore.customSubscriptionLink += `&config=${encodeURIComponent(remoteConfigsStore.remoteConfigs.get(remoteConfigsStore.remoteConfig) as string)}`
         }
@@ -84,7 +84,7 @@ async function parseFromUrl() {
                 console.error(e)
                 throw new Error("Please enter a legal subscription link!");
             }
-            othersStore.backendAddress = `${url.origin}${url.pathname}?`
+            othersStore.backendUrl = `${url.origin}${url.pathname}?`
             const params = new URLSearchParams(url.search)
 
             const target = params.get('target') ?? ''
@@ -160,16 +160,16 @@ async function parseFromUrl() {
 </script>
 
 <template>
-    <div id="functions">
-        <v-btn variant="flat" color="pink"
+    <div id="functions" class="params">
+        <v-btn variant="flat" color="button"
             :disabled="othersStore.subscriptionLinks === '' || proxyClientsStore.proxyClient === ''"
             @click="genSubLink">Generate
             subscription link</v-btn>
-        <v-btn variant="flat" color="primary"
+        <v-btn variant="flat" color="button"
             :disabled="resultStore.customSubscriptionLink === '' || proxyClientsStore.proxyClient !== 'Clash'"
             @click="importToClash">Import to
             Clash</v-btn>
-        <v-btn variant="flat" color="primary" @click="parseFromUrl">Parse from URL</v-btn>
+        <v-btn variant="flat" color="button" @click="parseFromUrl">Parse from URL</v-btn>
     </div>
 </template>
 

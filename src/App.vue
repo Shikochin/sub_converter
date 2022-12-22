@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import SubConverterHeader from './components/SubConverterHeader.vue';
-import SubConverterModes from './components/SubConverterModes/SubConverterModes.vue';
+import SubConverterParams from './components/SubConverterParamsSets/SubConverterParams.vue';
 </script>
 
 <template>
     <main>
         <SubConverterHeader></SubConverterHeader>
-        <SubConverterModes></SubConverterModes>
+        <SubConverterParams></SubConverterParams>
     </main>
 </template>
 
-<style scoped>
+<style>
 main {
     padding: 1vw;
+    background-color: #e2e8f0;
 }
 </style>

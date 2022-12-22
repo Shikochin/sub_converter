@@ -9,7 +9,7 @@ const proxyClientsStore = useProxyClientsStore()
 
 <template>
 
-    <v-card title="Custom Features">
+    <v-card title="Custom Features" class="params" color="secondary">
         <v-select chips multiple
             :items="proxyClientsStore.proxyClient === 'Clash' ? customFeaturesStore.customFeatures : ['Surge.DoH', 'NeteaseCloud']"
             label="Custom Features" v-model="customFeaturesStore.choosedFeatures"></v-select>

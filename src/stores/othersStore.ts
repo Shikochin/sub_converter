@@ -3,9 +3,9 @@ import { defineStore } from 'pinia'
 export const useOthersStore = defineStore({
     id: 'othersStore',
     state: () => ({
-        mode: 'basic',
+        params: undefined as undefined | 'advanced',
         subscriptionLinks: '',
-        backendAddress: '',
+        backendUrl: '',
         nodeName: {
             include: '',
             exclude: '',

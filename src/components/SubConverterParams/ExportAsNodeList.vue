@@ -6,14 +6,5 @@ const store = useOthersStore()
 
 
 <template>
-    <v-card>
-        <v-switch color="black" label="Export As Node List" v-model="store.exportAsNodeList"
-            class="switches"></v-switch>
-    </v-card>
+    <v-switch color="black" label="Export As Node List" v-model="store.exportAsNodeList"></v-switch>
 </template>
-
-<style scoped>
-.switches {
-    padding-left: 1vw;
-}
-</style>

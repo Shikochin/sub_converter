@@ -6,7 +6,7 @@ const store = useProxyClientsStore()
 </script>
 
 <template>
-    <v-card title="Proxy Client">
+    <v-card class="params" title="Proxy Client" color="primary">
         <v-select label="Proxy Client" :items="store.proxyClientsNames" v-model="store.proxyClient"></v-select>
     </v-card>
 </template>

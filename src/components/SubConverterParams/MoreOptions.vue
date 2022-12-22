@@ -7,7 +7,7 @@ const store = useMoreOptionsStore()
 
 <template>
 
-    <v-card title="More Options">
+    <v-card title="More Options" class="params" color="secondary">
         <v-select chips multiple :items="store.moreOptions" label="More Options"
             v-model="store.choosedOptions"></v-select>
     </v-card>

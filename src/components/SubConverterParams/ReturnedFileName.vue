@@ -5,7 +5,7 @@ const store = useOthersStore()
 </script>
 <template>
 
-    <v-card title="Returned File Name">
+    <v-card title="Returned File Name" class="params" color="secondary">
         <v-text-field label="Returned File Name" v-model="store.returnedFileName"></v-text-field>
     </v-card>
 
