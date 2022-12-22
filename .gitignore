@@ -25,3 +25,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Sub Converter Config
+subconverter.config.ts

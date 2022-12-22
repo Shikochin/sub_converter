@@ -29,7 +29,7 @@ async function copyToast() {
         <br>
         <v-text-field disabled variant="outlined" v-model="store.customSubscriptionLink"></v-text-field>
         <v-btn :disabled="store.customSubscriptionLink === ''"
-            @click="copy(store.customSubscriptionLink).then(copyToast)" variant="flat" color="button">Copy</v-btn>
+            @click="copy(store.customSubscriptionLink).then(copyToast)" color="button">Copy</v-btn>
     </v-card>
 
 </template>

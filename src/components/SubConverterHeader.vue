@@ -3,7 +3,7 @@
 
 <template>
     <header>
-        <v-card title="Subscription Converter" color="primary">
+        <v-card title="Subscription Converter" color="primary" class="params header">
         </v-card>
     </header>
 </template>

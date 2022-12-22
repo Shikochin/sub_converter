@@ -2,9 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 // Vuetify
-import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
-import './styles/base.css'
+import 'vuetify/styles'
+// Material Design Icons
+import '@mdi/font/css/materialdesignicons.min.css'
+import './styles/main.css'
 
 // Pinia
 import { createPinia } from 'pinia'
@@ -13,11 +15,10 @@ const vuetify = createVuetify({
     theme: {
         themes: {
             light: {
-                dark: false,
                 colors: {
                     primary: '#F1F5F9',
-                    secondary: '#F1F8FF',
-                    button: '#BADBFE',
+                    secondary: '#E8EAF6',
+                    button: '#B3E5FC',
                 },
             },
         },

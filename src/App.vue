@@ -4,15 +4,6 @@ import SubConverterParams from './components/SubConverterParamsSets/SubConverter
 </script>
 
 <template>
-    <main>
-        <SubConverterHeader></SubConverterHeader>
-        <SubConverterParams></SubConverterParams>
-    </main>
+    <SubConverterHeader></SubConverterHeader>
+    <SubConverterParams></SubConverterParams>
 </template>
-
-<style>
-main {
-    padding: 1vw;
-    background-color: #e2e8f0;
-}
-</style>

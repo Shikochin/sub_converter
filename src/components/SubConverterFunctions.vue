@@ -111,15 +111,15 @@ async function parseFromUrl() {
 
 <template>
     <div id="functions" class="params">
-        <v-btn variant="flat" color="button"
+        <v-btn color="button"
             :disabled="paramsStore.basicParams.subscriptionLinks === '' || paramsStore.basicParams.proxyClient === ''"
             @click="genSubLink">Generate
             subscription link</v-btn>
-        <v-btn variant="flat" color="button"
+        <v-btn color="button"
             :disabled="resultStore.customSubscriptionLink === '' || paramsStore.basicParams.proxyClient !== 'Clash'"
             @click="importToClash">Import to
             Clash</v-btn>
-        <v-btn variant="flat" color="button" @click="parseFromUrl">Parse from URL</v-btn>
+        <v-btn color="button" @click="parseFromUrl">Parse from URL</v-btn>
     </div>
 </template>
 

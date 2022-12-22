@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { SubConverterConfig } from '../../subconverter.config'
 
 export const useParamsStore = defineStore({
     id: 'paramsStore',
@@ -30,7 +31,7 @@ export const useParamsStore = defineStore({
             state.basicParams.subscriptionLinks.replace(/(\n|\r|\n\r)/g, '|'),
         backendUrl: (state) =>
             state.advancedParams.backendUrl === ''
-                ? 'https://api.wcc.best/sub?'
+                ? SubConverterConfig.defaultBackendUrl
                 : state.advancedParams.backendUrl,
     },
 })

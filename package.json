@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "run-p type-check build-only",
+        "build": "run-p type-check lint build-only",
         "preview": "vite preview",
         "build-only": "vite build",
         "type-check": "vue-tsc --noEmit",
@@ -16,6 +16,7 @@
         "vuetify": "^3.0.5"
     },
     "devDependencies": {
+        "@mdi/font": "^7.1.96",
         "@rushstack/eslint-patch": "^1.1.4",
         "@types/node": "^18.11.12",
         "@vitejs/plugin-vue": "^4.0.0",
