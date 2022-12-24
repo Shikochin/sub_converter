@@ -3,7 +3,7 @@ import { useResultsStore } from '@/stores/resultsStore';
 import { useParamsStore } from '@/stores/paramsStore';
 import proxyClients from '@/data/proxyClients';
 import remoteConfigs from '@/data/remoteConfigs';
-import moreParams from '@/data/moreParams';
+import extraParams from '@/data/extraParams';
 import getFirstKey from '@/funcs/getFirstKey';
 import Swal from 'sweetalert2'
 
@@ -28,7 +28,7 @@ function genSubLink() {
             resultStore.customSubscriptionLink += `&filename=${encodeURIComponent(paramsStore.advancedParams.fileName)}`
         }
         const { choosedParams } = paramsStore.advancedParams
-        for (const [k, v] of moreParams) {
+        for (const [k, v] of extraParams) {
             if (choosedParams.includes(k)) {
                 resultStore.customSubscriptionLink += `&${v}=true`
             }
@@ -86,14 +86,12 @@ async function parseFromUrl() {
 
             const choosedParams = []
             const paramsNames = Array.from(params.keys())
-            for (const [k, v] of moreParams) {
+            for (const [k, v] of extraParams) {
                 if (paramsNames.includes(v)) {
                     choosedParams.push(k)
                 }
             }
             paramsStore.advancedParams.choosedParams = choosedParams
-
-            paramsStore.advancedParams.exportAsNodeList = params.get('list') === 'true'
 
             resultStore.customSubscriptionLink = value
 

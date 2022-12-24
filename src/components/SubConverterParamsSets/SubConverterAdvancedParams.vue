@@ -3,7 +3,7 @@ import BackendUrl from '../SubConverterParams/BackendUrl.vue';
 import RemoteConfig from '../SubConverterParams/RemoteConfig.vue';
 import NodeName from '../SubConverterParams/NodeName.vue'
 import FileName from '../SubConverterParams/FileName.vue';
-import MoreParams from '../SubConverterParams/MoreParams.vue';
+import ExtraParams from '../SubConverterParams/ExtraParams.vue';
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import MoreParams from '../SubConverterParams/MoreParams.vue';
         <FileName></FileName>
     </section>
     <section class="sub-parts">
-        <MoreParams></MoreParams>
+        <ExtraParams></ExtraParams>
     </section>
 </template>
 

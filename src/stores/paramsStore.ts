@@ -22,7 +22,6 @@ export const useParamsStore = defineStore({
                 'Insert insert_url',
                 'Filter illegal nodes',
             ],
-            exportAsNodeList: false,
         },
     }),
     getters: {

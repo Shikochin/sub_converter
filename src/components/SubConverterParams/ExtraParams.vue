@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { useParamsStore } from '@/stores/paramsStore';
-import moreParams from '@/data/moreParams';
+import extraParams from '@/data/extraParams';
 import getKeys from '@/funcs/getKeys';
 
-const moreParamsNames = getKeys(moreParams)
+const extraParamsNames = getKeys(extraParams)
 
 const store = useParamsStore()
 </script>
 
 <template>
 
-    <v-card title="More Params" class="params" color="secondary">
-        <v-select chips multiple :items="moreParamsNames" label="More Params"
+    <v-card title="Extra Params" class="params" color="secondary">
+        <v-select chips multiple :items="extraParamsNames" label="Extra Params"
             v-model="store.advancedParams.choosedParams"></v-select>
     </v-card>
 
