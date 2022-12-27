@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import CustomSub from './SubConverterResults/CustomSub.vue';
+import GeneratedSubLink from './SubConverterResults/GeneratedSubLink.vue';
 </script>
 
 <template>
-    <CustomSub></CustomSub>
+    <GeneratedSubLink></GeneratedSubLink>
 </template>
