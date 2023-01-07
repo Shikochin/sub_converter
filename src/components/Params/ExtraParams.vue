@@ -12,7 +12,7 @@ const store = useParamsStore()
 
     <v-card title="Extra Params" class="params" color="secondary">
         <v-select chips multiple :items="extraParamsNames" label="Extra Params"
-            v-model="store.advancedParams.choosedParams"></v-select>
+            v-model="store.data.advancedParams.choosedParams"></v-select>
     </v-card>
 
 </template>

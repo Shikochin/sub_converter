@@ -3,11 +3,11 @@ import { useParamsStore } from '@/stores/paramsStore';
 import { proxyClients, remoteConfigs, extraParams } from '@/data';
 import genSubLink from '@/funcs/genSubLink';
 import parseFromUrl from '@/funcs/parseFromUrl';
-import { SubConverterConfig } from '../../subconverter.config'
+import { SubConverterConfig } from '../../../subconverter.config'
 import { computed } from 'vue';
 
 const paramsStore = useParamsStore()
-const generatedSubLink = computed(() => genSubLink(paramsStore, proxyClients, remoteConfigs, extraParams, SubConverterConfig))
+const generatedSubLink = computed(() => genSubLink(paramsStore.data, proxyClients, remoteConfigs, extraParams, SubConverterConfig))
 
 function importToClash() {
     const url = "clash://install-config?url="
@@ -17,9 +17,11 @@ function importToClash() {
 
 <template>
     <div id="functions" class="params">
-        <v-btn color="button" :disabled="generatedSubLink === '' || paramsStore.basicParams.proxyClient !== 'Clash'"
+        <v-btn color="button"
+            :disabled="generatedSubLink === '' || paramsStore.data.basicParams.proxyClient !== 'Clash'"
             @click="importToClash">Import to Clash</v-btn>
-        <v-btn color="button" @click="parseFromUrl(paramsStore, proxyClients, remoteConfigs, extraParams)">Parse from
+        <v-btn color="button" @click="parseFromUrl(paramsStore.data, proxyClients, remoteConfigs, extraParams)">Parse
+            from
             URL</v-btn>
     </div>
 </template>

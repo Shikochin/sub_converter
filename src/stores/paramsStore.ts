@@ -3,8 +3,10 @@ import type Parameters from '@/types/Parameters'
 
 export const useParamsStore = defineStore({
     id: 'paramsStore',
-    state: () =>
-        <Parameters>{
+    state: () => ({
+        data: (JSON.parse(
+            localStorage.getItem('data') as string
+        ) as Parameters | null) ?? {
             paramsMode: undefined,
             basicParams: {
                 subscriptionLinks: '',
@@ -25,4 +27,10 @@ export const useParamsStore = defineStore({
                 ],
             },
         },
+    }),
+    actions: {
+        saveData() {
+            localStorage.setItem('data', JSON.stringify(this.data))
+        },
+    },
 })

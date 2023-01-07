@@ -11,6 +11,7 @@ const store = useParamsStore()
 
 <template>
     <v-card class="params" title="Proxy Client" color="primary">
-        <v-select label="Proxy Client" :items="proxyClientsNames" v-model="store.basicParams.proxyClient"></v-select>
+        <v-select label="Proxy Client" :items="proxyClientsNames"
+            v-model="store.data.basicParams.proxyClient"></v-select>
     </v-card>
 </template>

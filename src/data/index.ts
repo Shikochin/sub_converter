@@ -1,5 +1,3 @@
-import proxyClients from './proxyClients'
-import remoteConfigs from './remoteConfigs'
-import extraParams from './extraParams'
-
-export { proxyClients, remoteConfigs, extraParams }
+export { default as proxyClients } from './proxyClients'
+export { default as remoteConfigs } from './remoteConfigs'
+export { default as extraParams } from './extraParams'

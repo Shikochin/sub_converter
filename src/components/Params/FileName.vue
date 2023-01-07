@@ -6,7 +6,7 @@ const store = useParamsStore()
 <template>
 
     <v-card title="File Name" class="params" color="secondary">
-        <v-text-field label="File Name" v-model="store.advancedParams.fileName"></v-text-field>
+        <v-text-field label="File Name" v-model="store.data.advancedParams.fileName"></v-text-field>
     </v-card>
 
 </template>
