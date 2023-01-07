@@ -7,6 +7,6 @@ const store = useParamsStore()
 <template>
     <v-card class="params" title="Subscription Links" color="primary"
         subtitle="Support 'subscription links' or 'ss/ssr/vmess link', multiple links, one per line or separated by |">
-        <v-textarea label="Subscription Links" v-model="store.basicParams.subscriptionLinks"></v-textarea>
+        <v-textarea label="Subscription Links" v-model="store.data.basicParams.subscriptionLinks"></v-textarea>
     </v-card>
 </template>

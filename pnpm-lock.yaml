@@ -7,7 +7,6 @@ specifiers:
   '@vitejs/plugin-vue': ^4.0.0
   '@vue/eslint-config-typescript': ^11.0.0
   '@vue/tsconfig': ^0.1.3
-  '@vueuse/core': ^9.8.2
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
   npm-run-all: ^4.1.5
@@ -18,12 +17,11 @@ specifiers:
   vite-plugin-vuetify: ^1.0.1
   vue: ^3.2.45
   vue-tsc: ^1.0.12
-  vuetify: ^3.0.5
+  vuetify: 3.1.0
 
 dependencies:
-  '@vueuse/core': 9.8.2_vue@3.2.45
   vue: 3.2.45
-  vuetify: 3.0.5_ihnv4ujwy6q3qcyepcitbzrajy
+  vuetify: 3.1.0_ihnv4ujwy6q3qcyepcitbzrajy
 
 devDependencies:
   '@mdi/font': 7.1.96
@@ -39,7 +37,7 @@ devDependencies:
   sweetalert2: 11.6.16
   typescript: 4.9.4
   vite: 4.0.2_@types+node@18.11.17
-  vite-plugin-vuetify: 1.0.1_xjpsiiqv2u6a6ub4d6ndg7isc4
+  vite-plugin-vuetify: 1.0.1_xsinlkvxk7xujxsz73cflkm6ua
   vue-tsc: 1.0.16_typescript@4.9.4
 
 packages:
@@ -319,10 +317,6 @@ packages:
   /@types/semver/7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: true
-
-  /@types/web-bluetooth/0.0.16:
-    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
-    dev: false
 
   /@typescript-eslint/eslint-plugin/5.47.0_ncmi6noazr3nzas7jxykisekym:
     resolution: {integrity: sha512-AHZtlXAMGkDmyLuLZsRpH3p4G/1iARIwc/T0vIem2YB+xW6pZaXYXzCBnZSF/5fdM97R9QqZWZ+h3iW10XgevQ==}
@@ -613,7 +607,7 @@ packages:
       '@types/node': 18.11.17
     dev: true
 
-  /@vuetify/loader-shared/1.7.0_vue@3.2.45+vuetify@3.0.5:
+  /@vuetify/loader-shared/1.7.0_vue@3.2.45+vuetify@3.1.0:
     resolution: {integrity: sha512-Db4K67wMhduDsbvdRBYkrYuomti+j0E/1vlz1lnDng5F9LYYBcXa60qypIazVGI6GX/CuY1vshN6XGtGQI4FKg==}
     peerDependencies:
       vue: ^3.0.0
@@ -622,32 +616,7 @@ packages:
       find-cache-dir: 3.3.2
       upath: 2.0.1
       vue: 3.2.45
-      vuetify: 3.0.5_ihnv4ujwy6q3qcyepcitbzrajy
-
-  /@vueuse/core/9.8.2_vue@3.2.45:
-    resolution: {integrity: sha512-aWiCmcYIpPt7xjuqYiceODEMHchDYthrJ4AqI+FXPZrR23PZOqdiktbUVyQl2kGlR3H4i9UJ/uimQrwhz9UouQ==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.8.2
-      '@vueuse/shared': 9.8.2_vue@3.2.45
-      vue-demi: 0.13.11_vue@3.2.45
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
-  /@vueuse/metadata/9.8.2:
-    resolution: {integrity: sha512-N4E/BKS+9VsUeD4WLVRU1J2kCOLh+iikBcMtipFcTyL204132vDYHs27zLAVabJYGnhC0dIVGdhg9pbOZiY2TQ==}
-    dev: false
-
-  /@vueuse/shared/9.8.2_vue@3.2.45:
-    resolution: {integrity: sha512-ACjrPQzowd5dnabNJt9EoGVobco9/ENiA5qP53vjiuxndlJYuc/UegwhXC7KdQbPX4F45a50+45K3g1wNqOzmA==}
-    dependencies:
-      vue-demi: 0.13.11_vue@3.2.45
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
+      vuetify: 3.1.0_ihnv4ujwy6q3qcyepcitbzrajy
 
   /acorn-jsx/5.3.2_acorn@8.8.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2112,18 +2081,18 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-vuetify/1.0.1_xjpsiiqv2u6a6ub4d6ndg7isc4:
+  /vite-plugin-vuetify/1.0.1_xsinlkvxk7xujxsz73cflkm6ua:
     resolution: {integrity: sha512-/xHsIDuHxq7f6fDqCBYxNascLhDi+X8dV3RzTwmo4mGPrSnGq9pHv8wJsXBIQIT3nY8s16V0lmd6sXMjm0F8wg==}
     engines: {node: '>=12'}
     peerDependencies:
       vite: ^2.7.0 || ^3.0.0 || ^4.0.0
       vuetify: ^3.0.0-beta.4
     dependencies:
-      '@vuetify/loader-shared': 1.7.0_vue@3.2.45+vuetify@3.0.5
+      '@vuetify/loader-shared': 1.7.0_vue@3.2.45+vuetify@3.1.0
       debug: 4.3.4
       upath: 2.0.1
       vite: 4.0.2_@types+node@18.11.17
-      vuetify: 3.0.5_ihnv4ujwy6q3qcyepcitbzrajy
+      vuetify: 3.1.0_ihnv4ujwy6q3qcyepcitbzrajy
     transitivePeerDependencies:
       - supports-color
       - vue
@@ -2174,6 +2143,7 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.45
+    dev: true
 
   /vue-eslint-parser/9.1.0_eslint@8.30.0:
     resolution: {integrity: sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==}
@@ -2220,8 +2190,8 @@ packages:
       '@vue/server-renderer': 3.2.45_vue@3.2.45
       '@vue/shared': 3.2.45
 
-  /vuetify/3.0.5_ihnv4ujwy6q3qcyepcitbzrajy:
-    resolution: {integrity: sha512-ciX+9XuHQ4zx27dEceHrs6xuCeqPgo91DhvCm+udbp0Qg95phad03uVcdHvyv1XW/stgdZGneiqg5dxQvLGzPw==}
+  /vuetify/3.1.0_ihnv4ujwy6q3qcyepcitbzrajy:
+    resolution: {integrity: sha512-v0+5eNq4GPXGcJ0F2dwJDbQOhuZhEgoiUDWHXqgWJixzc9mzwt+4nSmPz0vYPYl9oC3UFf3Se+vh0xNoRjv4Ig==}
     engines: {node: ^12.20 || >=14.13}
     peerDependencies:
       vite-plugin-vuetify: ^1.0.0-alpha.12
@@ -2236,7 +2206,7 @@ packages:
       webpack-plugin-vuetify:
         optional: true
     dependencies:
-      vite-plugin-vuetify: 1.0.1_xjpsiiqv2u6a6ub4d6ndg7isc4
+      vite-plugin-vuetify: 1.0.1_xsinlkvxk7xujxsz73cflkm6ua
       vue: 3.2.45
 
   /which-boxed-primitive/1.0.2:

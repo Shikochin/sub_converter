@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import BackendUrl from '../SubConverterParams/BackendUrl.vue';
-import RemoteConfig from '../SubConverterParams/RemoteConfig.vue';
-import NodeName from '../SubConverterParams/NodeName.vue'
-import FileName from '../SubConverterParams/FileName.vue';
-import ExtraParams from '../SubConverterParams/ExtraParams.vue';
+import BackendUrl from '../Params/BackendUrl.vue';
+import RemoteConfig from '../Params/RemoteConfig.vue';
+import NodeName from '../Params/NodeName.vue'
+import FileName from '../Params/FileName.vue';
+import ExtraParams from '../Params/ExtraParams.vue';
 </script>
 
 <template>

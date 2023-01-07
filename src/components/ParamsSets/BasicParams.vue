@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SubLinks from '../SubConverterParams/SubLinks.vue';
-import ProxyClient from '../SubConverterParams/ProxyClient.vue';
+import SubLinks from '../Params/SubLinks.vue';
+import ProxyClient from '../Params/ProxyClient.vue';
 </script>
 
 <template>
